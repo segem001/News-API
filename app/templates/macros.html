@@ -1,0 +1,18 @@
+{% macro displaySources(popular) %}
+   {% for news_item in popular%}
+<button><a href="{{news_item.url}}">{{news_item.name}}</a></button>
+
+{%endfor%}
+{% endmacro %}
+
+
+<!-- Displaying reviews macro -->
+{% macro displayArticles(bbc) %}
+         {% for bbc in bbc%}
+    <div class="bbc">
+<img src="{{bbc.urlToImage}}" alt="{{bbc.title}}">
+     <h4 class="describe"><a href="{{bbc.url}}">{{bbc.title}}</a></h4>
+    <h4 class="describe">{{bbc.description[:80]}}---</h4>
+</div>
+    {%endfor%}
+{% endmacro %}
