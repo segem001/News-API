@@ -1,0 +1,15 @@
+.bbc{
+width:20%;
+border:1px solid black;
+float:left;
+margin:10px;
+}
+.describe{
+padding:20px !important
+
+}
+.bbc img{
+width:100% !important;
+height:25vh !important;
+
+}
