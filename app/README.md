@@ -1,23 +1,22 @@
 # News-API
 
-## Built By [Kiprono Dominic Segem]()
+## Built By [Kiprono Dominic Segem](https://python-djangoflask.herokuapp.com/)
 
 ## Description
 News-API is a simple, easy-to-use REST API that returns   results for current and historic news articles published by business,sports or general sources.
-## User Stories
-These are the behaviours/features that the application implements for use by a user.
+##  Installation Requirements
+  Installation for the package can be done via pip:
 
-As a user I would like:
-* To create an account with my details - log in and password
-* Store my existing login credentials
+  $ python -m pip install newsapi-python
 
-  
+ ## Usage
+After installation, import the  class for client into your project:
 
-## Specifications
-
-## SetUp / Installation Requirements
+from newsapi import NewsApiClient
+Initialize the client with your API key:
+api = NewsApiClient(api_key='XXXXXXXXXXXXXXXXXXXXXXX')
 ### Prerequisites
-* python3.6
+* python3.8
 
 
 ### Setup Instructions
@@ -30,11 +29,9 @@ As a user I would like:
 * To run the application, in your terminal:
 
         $ ./start.py
-        
-## Testing the Application
-
 ## Technologies Used
 * Python3.8
+* Bootstrap flask
 
 ## **License**
 
